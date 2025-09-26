@@ -1,0 +1,31 @@
+﻿<Window x:Class="ScreenKeyWin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenKeyWin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        WindowStartupLocation="Manual"
+        ShowActivated="False"
+        Opacity="0">
+    <Grid>
+        <!-- 全屏宽度的背景条 -->
+        <Border Name="KeyBorder"
+                Background="#CC000000"
+                CornerRadius="0">
+            <TextBlock Name="KeyText"
+                       Foreground="White"
+                       FontFamily="Consolas, Monospace"
+                       FontSize="24"
+                       FontWeight="SemiBold"
+                       TextAlignment="Center"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+        </Border>
+    </Grid>
+</Window>
